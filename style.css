@@ -67,3 +67,6 @@ div > textarea {
 	text-align: center;
 	color: white;
 }
+.margindiv {
+	margin-top: 20vh;
+}

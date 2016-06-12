@@ -1,9 +1,11 @@
 var main = function(){
 	$('div').on('click', function(){
-		$(this).toggleClass('col-xs-8 col-xs-offset-1 active');
-		$('body').addClass('bactive');
+		$(this).toggleClass('col-xs-12 container col-xs-offset-1 active');
+		$('body').toggleClass('bactive');
 		$('body').animate({scrollTop: $(this).offset().top}, 300);
+		$(this).toggleClass('margindiv');
 	});
+
 	$('.strength').on('click', function(){
 		document.getElementById('str').disabled = false;
 	});
@@ -16,6 +18,7 @@ var main = function(){
 	$('.threat').on('click', function(){
 		document.getElementById('thr').disabled = false;
 	});
+
 	$(document).keyup(function(e){
 		if(e.keyCode == 27){
 			$('div').removeClass('col-xs-offset-1 col-xs-8 active');
