@@ -1,0 +1,69 @@
+.body {
+	height: 100vh;
+	width: 100vw;
+}
+.strength {
+	height: 50vh;
+	background-color: #f1c40f;
+}
+.strength > textarea {
+	height: 70%;
+	width: 100%;
+	background-color: #f1c40f;
+	border: none;
+}
+.weakness {
+	height: 50vh;
+	background-color: #3498db;
+}
+.weakness > textarea {
+	height: 70%;
+	width: 100%;
+	background-color: #3498db;
+	border: none;
+}
+.opportunity {
+	height: 50vh;
+	background-color: #2ecc71;
+}
+.opportunity > textarea {
+	height: 70%;
+	width: 100%;
+	background-color: #2ecc71;
+	border: none;
+}
+.threat {
+	height: 50vh;
+	background-color: #e74c3c;
+}
+.threat > textarea {
+	height: 70%;
+	width: 100%;
+	background-color: #e74c3c;
+	border: none;	
+}
+div:hover {
+	box-shadow: 0px 0px 20px #2f2f2f;
+	z-index: 5;
+}
+h3 {
+	color: white;
+	text-align: center;
+	padding: all;
+}
+.active {
+	width: 80vw;
+	height: 80vh;
+	box-shadow: 2px 5px 20px #2f2f2f;
+	z-index: 10;	
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+.bactive {
+	background-color: grey;
+}
+div > textarea {
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
