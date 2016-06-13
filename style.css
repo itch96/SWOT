@@ -70,3 +70,24 @@ div > textarea {
 .margindiv {
 	margin-top: 20vh;
 }
+
+textarea::-webkit-input-placeholder {
+	color: white !important;
+	font-size: 14px;
+	padding-top: 10vh;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+	color: white !important;  
+	font-size: 14px;
+	padding-top: 10vh;
+}
+textarea::-moz-placeholder {  /* Firefox 19+ */
+	color: white !important;  
+	font-size: 14px;
+	padding-top: 10vh;
+}
+textarea:-ms-input-placeholder {  
+	color: white !important;  
+	font-size: 14px;
+	padding-top: 10vh;
+}
