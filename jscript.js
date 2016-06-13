@@ -5,7 +5,6 @@ var main = function(){
 		$('body').animate({scrollTop: $(this).offset().top}, 300);
 		$(this).toggleClass('margindiv');
 	});
-
 	$('.strength').on('click', function(){
 		document.getElementById('str').disabled = false;
 	});
@@ -21,9 +20,9 @@ var main = function(){
 
 	$(document).keyup(function(e){
 		if(e.keyCode == 27){
-			$('div').removeClass('col-xs-offset-1 col-xs-8 active');
-			$('div').addClass('col-xs-6');
+			$('div').removeClass('col-xs-12 container col-xs-offset-1 active');
 			$('body').removeClass('bactive');
+			$('div').removeClass('margindiv');
 			document.getElementById('str').disabled = true;
 			document.getElementById('wea').disabled = true;
 			document.getElementById('opp').disabled = true;
