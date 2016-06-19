@@ -2,7 +2,7 @@ var main = function(){
 	
 	$('div').on('click', function(){
 		$(this).toggleClass('col-xs-12 container col-xs-offset-1 active');
-		$('body').toggleClass('bactive');
+		$('body, html').toggleClass('bactive');
 		$('body, html').animate({scrollTop: $(this).offset().top}, 300);
 		$(this).toggleClass('margindiv');
 	});
@@ -11,7 +11,7 @@ var main = function(){
 	$(document).keyup(function(e){
 		if(e.keyCode == 27 ){
 			$('div').removeClass('col-xs-12 container col-xs-offset-1 active');
-			$('body').removeClass('bactive');
+			$('body, html').removeClass('bactive');
 			$('div').removeClass('margindiv');
 			document.getElementById('str').disabled = true;
 			document.getElementById('wea').disabled = true;
