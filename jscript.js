@@ -3,7 +3,7 @@ var main = function(){
 	$('div').on('click', function(){
 		$(this).toggleClass('col-xs-12 container col-xs-offset-1 active');
 		$('body').toggleClass('bactive');
-		$('body').animate({scrollTop: $(this).offset().top}, 300);
+		$('body, html').animate({scrollTop: $(this).offset().top}, 300);
 		$(this).toggleClass('margindiv');
 	});
 
